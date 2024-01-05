@@ -1,9 +1,9 @@
 // Question 5  
 public class Substring {
     public static void main(String[] args) {
-        // to run the first : java Substring A "{your string here} {valid selected index here}" 
-        // to run the second : java Substring B "{your string here} {valid smaller selected index here} {valid bigger selected index here}" 
-        // to run the third : java Substring C "{your string here} {true\false}" 
+        // to run the first : java Substring A "{your string here}" {valid selected index here} 
+        // to run the second : java Substring B "{your string here}" {valid smaller selected index here} {valid bigger selected index here}
+        // to run the third : java Substring C "{your string here}" {true\false} 
 
         String mode = args[0];
         String str = args[1];
