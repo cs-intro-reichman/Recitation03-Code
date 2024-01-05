@@ -3,7 +3,7 @@ public class ValidPassword2 {
     public static void main (String[] args) {
         String password = args[0];	
         String name = args[1];
-        boolean valid = isValid(password, name);
+        boolean valid = isValid(name, password);
     
         if (valid) {
             System.out.println("the password is valid");
@@ -11,7 +11,6 @@ public class ValidPassword2 {
             System.out.println("the password is not valid");
         }
     }
-
     public static boolean isSubstring(String smaller, String bigger){
         boolean isSub = false;
         int lastIndex = bigger.length() - smaller.length() + 1;

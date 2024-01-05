@@ -23,12 +23,12 @@ public class Factorial {
     // Question 1
     public static int badFactorial1(int n) {
         int ans = 1;
-        for (long i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
             ans *= i;
         }
         return ans;
     }
-
+    
     // Question 1, Expansion 1
     public static int badFactorial2(int n) {
         if (n < 0){
@@ -52,5 +52,4 @@ public class Factorial {
         }
         return ans;
     }
-    
 }

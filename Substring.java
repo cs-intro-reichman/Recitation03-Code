@@ -1,6 +1,10 @@
 // Question 5  
 public class Substring {
     public static void main(String[] args) {
+        // to run the first : java Substring A "{your string here} {valid selected index here}" 
+        // to run the second : java Substring B "{your string here} {valid smaller selected index here} {valid bigger selected index here}" 
+        // to run the third : java Substring C "{your string here} {true\false}" 
+
         String mode = args[0];
         String str = args[1];
         int index = Integer.parseInt(args[2]);
@@ -38,8 +42,8 @@ public class Substring {
         return res;
     }
     // Question 5, Expansion 2
-    public static String subs(String str, int index, boolean starts ) {
-        if (starts){
+    public static String subs(String str, int index, boolean startsWith ) {
+        if (!startsWith){
             return subs(str,index); // goes to A
         }
         return subs(str,0,index); // goes to B

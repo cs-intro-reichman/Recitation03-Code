@@ -12,13 +12,13 @@ public class LongestSequence2 {
             char curChar = text.charAt(i);
             char prevChar = text.charAt(i-1);
             if (curChar == prevChar) {
-            curLength++;
+                curLength++;
             } else {
-            curLength = 1;	
+                curLength = 1;	
             }
             if (curLength > maxLength) {
-            maxLength = curLength;
-            longest = text.charAt(i);
+                maxLength = curLength;
+                longest = text.charAt(i);
             }
         }	
 
